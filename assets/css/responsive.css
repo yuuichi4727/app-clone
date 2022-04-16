@@ -1,0 +1,71 @@
+/* mobile & tablet */
+@media (max-width:1023px){
+
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+
+    .hide-on-tablet{
+        display: none;
+    }
+    .section__photo > img {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media (max-width:739px) {
+    .show-on-mobile {
+        display: block;
+    }
+    
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .header__bg {
+        margin-bottom: unset;
+    }
+    .header__item-right {
+        position: relative;
+        transform: unset;
+        padding: 0;
+    }
+
+    .btn {
+        height: 60px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .mobile__download-btn {
+        background-color: var(--green-color);
+    }
+    .section__title,
+    .section__sub-title {
+        text-align: center;
+    }
+    #the-app .section__desc,
+    #clarity .section__desc {
+        text-align: justify;
+    }
+    .misc {
+        justify-content: center;
+    }
+    #the-app .section__photo,
+    #clarity .section__photo {
+        justify-content: center;
+    }
+    .list {
+        margin-bottom: 32px;
+    }
+    .list__item:last-child {
+        padding: 0
+    }
+    
+}
+

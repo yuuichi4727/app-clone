@@ -1,0 +1,281 @@
+.header {
+  position: relative;
+  background-color: red;
+}
+
+.mobile__download {
+  display: none;
+}
+
+.header__bg {
+  width: 100%;
+  height: auto;
+  margin-bottom: -8px;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.header__item {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 8px 16px;
+}
+
+.header__item-left {
+  width: 35%;
+  left: 0;
+}
+
+.header__item-right {
+  right: 0;
+}
+
+.header__download {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  opacity: 0.6;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.header__download:hover {
+  opacity: 1;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.download__title {
+  font-size: 2.4rem;
+  margin: 10px;
+  font-weight: 400;
+}
+
+.download__desc {
+  font-size: 1.6rem;
+}
+
+.download__btn {
+  margin: 16px 0;
+  width: 100%;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.tour__btn {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour__btn > i {
+  top: 1px;
+  right: -3px;
+  position: relative;
+  font-size: 13px;
+}
+
+.content__section {
+  max-width: 100%;
+  padding: 64px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#the-app .section__photo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.section__title {
+  font-size: 6.4rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.section__sub-title {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+#the-app .section__sub-title {
+  color: var(--green-color);
+}
+
+.section__desc {
+  font-size: 1.6rem;
+  margin: 16px 0;
+}
+
+.section__desc > span {
+  font-size: 2.4rem;
+}
+
+.section__btn {
+  margin: 16px 0;
+  height: 48px;
+  background-color: var(--gray-color);
+  color: var(--black-color);
+  padding: 0 24px;
+}
+
+.section__btn > i {
+  position: relative;
+  top: -2px;
+}
+
+.section__btn:hover {
+  background-color: var(--dark-gray-color);
+  color: var(--black-color);
+}
+
+.section__info .misc {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.section__info .misc i {
+  font-size: 2rem;
+  margin-left: 8px;
+}
+
+.section__info .misc > i:first-child {
+  color: var(--green-color);
+}
+
+.section__info .misc > i:last-child {
+  color: #2196f3;
+}
+
+#clarity.content__section {
+  background-color: var(--gray-color);
+}
+
+#clarity .section__sub-title {
+  color: var(--orange-color);
+}
+
+#clarity .section__photo {
+  filter: grayscale(75%);
+  display: flex;
+  align-items: center;
+}
+
+#features.content__section {
+  background-color: #616161;
+}
+
+#features .section__info {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__item-icon {
+  font-size: 6.4rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.features__item-icon:hover {
+  transform: scale(1.2);
+}
+
+.features__text {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--white-color);
+}
+
+.features__item-icon:hover ~ .features__text {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+#pricing .section__info {
+  text-align: center;
+}
+
+.pricing__plans {
+  margin-top: 64px;
+}
+
+.pricing__item-basic:first-child {
+  background-color: #616161;
+}
+
+.pricing__item-premium:first-child {
+  background-color: var(--orange-color);
+}
+
+.pricing__btn {
+  height: 48px;
+  padding: 0 24px;
+}
+
+.pricing__btn > i {
+  position: relative;
+  top: -2px;
+}
+
+.pricing__btn:hover {
+  background-color: var(--dark-gray-color);
+}
+
+.footer {
+  margin-top: 32px;
+  background-color: var(--gray-color);
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 32px 16px;
+}
+
+.footer__icon {
+  margin: 16px 0;
+  font-size: 2.4rem;
+}
+
+.footer__icon i:hover,
+.footer__text > a:hover {
+  color: var(--dark-gray-color);
+}
+
+.footer__text > a {
+  color: var(--black-color);
+}
